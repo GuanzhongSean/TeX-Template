@@ -1,0 +1,151 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm,enumerate,nicefrac,fancyhdr,hyperref,graphicx,adjustbox}
+\hypersetup{colorlinks=true,urlcolor=blue,citecolor=blue,linkcolor=blue}
+\usepackage[left=1.5cm, right=1.5cm, top=1.5cm, bottom = 1.5cm, includehead, includefoot]{geometry}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[d]{esvect}
+%\usepackage{draftwatermark}
+%\SetWatermarkText{\includegraphics{uw.png}}
+%\SetWatermarkText{\~J} %水印
+
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{multicol} %multicolumn
+\usepackage{setspace}
+\usepackage{mdframed}
+\usepackage{fancyhdr} 
+\usepackage{multienum}
+\usepackage{pdfpages}
+\usepackage{pstricks}
+\usepackage{multido}
+\usepackage{amssymb}
+\usepackage{amsmath} %matrix
+\usepackage{amsthm,epsfig,epstopdf,titling,url}
+\usepackage{amsfonts}
+\usepackage{tcolorbox}
+\usepackage{tabularx}
+\usepackage{array} %tabular may use it 
+\usepackage{colortbl}
+\usepackage{enumitem}
+\usepackage{romannum}
+\usepackage{relsize} %\mathlarger
+\usepackage{graphicx}
+\usepackage{pifont}
+\usepackage{subfig}
+\usepackage{xcolor}
+\usepackage{color}
+\usepackage{multirow}
+\usepackage{eso-pic}
+\tcbuselibrary{skins}
+\usepackage{ctex} %chinese
+\usepackage{hyperref}
+
+\graphicspath{{./Images/}} %without it, using {./Images/Image_Test}, 有没有.png不重要
+
+
+
+%% commands
+%% useful macros [add to them as needed]
+% sets
+\newcommand{\C}{{\mathbb{C}}} 
+\newcommand{\N}{{\mathbb{N}}}
+\newcommand{\Q}{{\mathbb{Q}}}
+\newcommand{\R}{{\mathbb{R}}}
+\newcommand{\Z}{{\mathbb{Z}}}
+\newcommand{\F}{{\mathbb{F}}}
+
+% bases
+\newcommand{\mA}{\mathcal{A}}
+\newcommand{\mB}{\mathcal{B}}
+\newcommand{\mC}{\mathcal{C}}
+\newcommand{\mD}{\mathcal{D}}
+\newcommand{\mE}{\mathcal{E}}
+\newcommand{\mL}{\mathcal{L}}
+\newcommand{\mM}{\mathcal{M}}
+\newcommand{\mO}{\mathcal{O}}
+\newcommand{\mP}{\mathcal{P}}
+\newcommand{\mS}{\mathcal{S}}
+\newcommand{\mT}{\mathcal{T}}
+
+% linear algebra
+\newcommand{\diag}{\operatorname{diag}}
+\newcommand{\adj}{\operatorname{adj}}
+\newcommand{\rank}{\operatorname{rank}}
+\newcommand{\spn}{\operatorname{Span}}
+\newcommand{\proj}{\operatorname{proj}}
+\newcommand{\prp}{\operatorname{perp}}
+\newcommand{\refl}{\operatorname{refl}}
+\newcommand{\tr}{\operatorname{tr}}
+\newcommand{\nul}{\operatorname{Null}}
+\newcommand{\nully}{\operatorname{nullity}}
+\newcommand{\range}{\operatorname{Range}}
+\renewcommand{\ker}{\operatorname{Ker}}
+\newcommand{\col}{\operatorname{Col}}
+\newcommand{\row}{\operatorname{Row}}
+\newcommand{\cof}{\operatorname{cof}}
+\newcommand{\Num}{\operatorname{Num}}
+\newcommand{\Id}{\operatorname{Id}}
+\newcommand{\ipb}{\langle \thinspace, \rangle}
+\newcommand{\ip}[2]{\left\langle #1, #2\right\rangle} % inner products
+\newcommand{\M}[2]{M_{#1\times #2}(\F)}
+\newcommand{\RREF}{\operatorname{RREF}}
+\newcommand{\cv}[1]{\begin{bmatrix} #1 \end{bmatrix}}
+
+% vectors
+\newcommand{\vzero}{\vv{0}}
+\newcommand{\va}{\vv{a}}
+\newcommand{\vb}{\vv{b}}
+\newcommand{\vc}{\vv{c}}
+\newcommand{\vd}{\vv{d}}
+\newcommand{\ve}{\vv{e}}
+\newcommand{\vf}{\vv{f}}
+\newcommand{\vg}{\vv{g}}
+\newcommand{\vh}{\vv{h}}
+\newcommand{\vl}{\vv{\ell}}
+\newcommand{\vm}{\vv{m}}
+\newcommand{\vn}{\vv{n}}
+\newcommand{\vp}{\vv{p}}
+\newcommand{\vq}{\vv{q}}
+\newcommand{\vr}{\vv{r}}
+\newcommand{\vs}{\vv{s}}
+\newcommand{\vt}{\vv{t}}
+\newcommand{\vu}{\vv{u}}
+\newcommand{\vvv}{{\vv{v}}}
+\newcommand{\vw}{\vv{w}}
+\newcommand{\vx}{\vv{x}}
+\newcommand{\vy}{\vv{y}}
+\newcommand{\vz}{\vv{z}}
+
+% display
+\newcommand{\ds}{\displaystyle}
+\newcommand{\qand}{\quad\text{and}}
+\newcommand{\qandq}{\quad\text{and}\quad}
+\newcommand{\hint}{\textbf{Hint: }}
+
+% misc
+\newcommand{\area}{\operatorname{area}}
+\newcommand{\vol}{\operatorname{vol}}
+\newcommand{\rc}{{\color{red} \checkmark}}
+
+%% header
+\pagestyle{fancy}
+\fancyhead[L]{\bf\large MATH 239 \\ Assignment 1 Solutions}
+\fancyhead[R]{\bf\large Spring 2022 \\ Jiaze Xiao  20933691}
+\fancyfoot{}
+%\fancyfoot[C]{Page \thepage\ of 2}
+\setlength{\headheight}{35pt}
+
+\begin{document}
+\section*{Question 1}
+
+\newpage
+\section*{Question 2}
+
+\newpage
+\section*{Question 3}
+
+\newpage
+\section*{Question 4}
+
+\newpage
+\end{document}
